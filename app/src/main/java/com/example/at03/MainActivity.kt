@@ -73,7 +73,7 @@ fun FuelCalculatorApp() {
         Spacer(modifier = Modifier.height(16.dp))
 
         // Campo de entrada para álcool
-        Text(text = "Álcool (preço por litro)", fontSize = 16.sp)
+        Text(text = "Álcool (preço por litro)", fontSize = 16.sp, color = MaterialTheme.colorScheme.onSurface)
         OutlinedTextField(
             value = alcoholPrice,
             onValueChange = { alcoholPrice = it },
@@ -85,7 +85,7 @@ fun FuelCalculatorApp() {
         Spacer(modifier = Modifier.height(16.dp))
 
         // Campo de entrada para gasolina
-        Text(text = "Gasolina (preço por litro)", fontSize = 16.sp)
+        Text(text = "Gasolina (preço por litro)", fontSize = 16.sp, color = MaterialTheme.colorScheme.onSurface)
         OutlinedTextField(
             value = gasolinePrice,
             onValueChange = { gasolinePrice = it },
@@ -100,7 +100,7 @@ fun FuelCalculatorApp() {
             //modifier = Modifier.fillMaxWidth(),
             //horizontalArrangement = Arrangement.SpaceEvenly
         ) {
-            Text(text = "Escolha a porcentagem", fontSize = 16.sp)
+            Text(text = "Escolha a porcentagem", fontSize = 16.sp, color = MaterialTheme.colorScheme.onSurface)
             SingleChoiceSegmentedButtonRow(
                 modifier = Modifier.fillMaxWidth()
             ) {
